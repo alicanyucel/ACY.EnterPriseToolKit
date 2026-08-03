@@ -1,9 +1,24 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+    <Authors>Ali Can Yücel</Authors>
+    <Company>EnterpriseToolkit</Company>
+    <PackageId>EnterpriseToolkit</PackageId>
+    <Version>1.0.0</Version>
+    <Description>A .NET 10 Class Library solving enterprise challenges: cache consistency, resilience, job monitoring, and audit tracking.</Description>
+    <PackageTags>cache;resilience;job;audit;enterprise;dotnet</PackageTags>
+    <RepositoryUrl>https://github.com/alicanyucel/EnterpriseToolkit</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Common dependencies for enterprise scenarios -->
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="10.0.0" />
+    <PackageReference Include="StackExchange.Redis" Version="2.7.33" />
+    <PackageReference Include="Polly" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.0" />
+  </ItemGroup>
 
 </Project>
