@@ -1,4 +1,7 @@
-﻿// ---------------- Cache Consistency ----------------
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+
 [AttributeUsage(AttributeTargets.Class)]
 public class CacheableAttribute : Attribute { }
 
@@ -68,7 +71,8 @@ public static class AuditInterceptor
     }
 }
 
-// ---------------- Example Usage ----------------
+// ---------------- Example Usage --------
+// --------
 [Cacheable]
 [Auditable]
 public class Order
